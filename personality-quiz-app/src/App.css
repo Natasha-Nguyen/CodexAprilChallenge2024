@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  overflow: hidden;
+
+}
+
+h1 {
+  margin-top: 0;
+
 }
 
 .App-logo {
@@ -35,4 +42,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header,
+.first,
+.second,
+.third,
+.transition,
+.results {
+  height: 100vh;
+}
+
+.section{
+  background: linear-gradient(#ade8f4, #0077b6, #03045e);
+}
+
+.transition{
+  background: linear-gradient(#03045e, #0077b6, #ade8f4);
+}
+
+.results {
+  background-color: #ade8f4;
 }
