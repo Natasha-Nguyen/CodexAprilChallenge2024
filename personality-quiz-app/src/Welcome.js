@@ -9,7 +9,7 @@ export default function Welcome() {
         <div className = "header flex flex-col items-center justify-between h-screen">
           <div></div>
           <button
-          className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-20 text-[18px]"
+          className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-5 text-white mb-20 text-[24px]"
           onClick={startQuiz}
         >
           Start Fishing
