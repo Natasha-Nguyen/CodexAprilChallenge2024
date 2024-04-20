@@ -53,8 +53,15 @@ h1 {
   height: 100vh;
 }
 
+.header {
+  background-image: url("./welcome-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .section{
-  background: linear-gradient(#ade8f4, #0077b6, #03045e);
+  background: linear-gradient(#2cabd3, #0077b6, #03045e);
 }
 
 .transition{

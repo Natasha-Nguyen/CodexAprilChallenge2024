@@ -1,5 +1,7 @@
 import "./App.css";
 import Questions from "./Questions.js";
+import Welcome from "./Welcome.js";
+
 
 function App() {
   // This function is called when the user clicks on the "Start" button
@@ -12,13 +14,8 @@ function App() {
 
   return (
     <div className="App">
+      <Welcome />
       <div className="section">
-      <div className="header">
-        <h1>Personality Quiz!</h1>
-        <button className="start" onClick={startQuiz}>
-          Start
-        </button>
-      </div>
       <div className="first">
         <Questions name="blah blah?" scrollTo=".second" />
       </div>
