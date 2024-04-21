@@ -1,6 +1,7 @@
 import "./App.css";
 import Questions from "./Questions.js";
 import Welcome from "./Welcome.js";
+import Results from "./Results.js";
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
 
       </div>
       <div className="results">
-        <h1>Results</h1>
+        <Results />
       </div>
     </div>
   );
