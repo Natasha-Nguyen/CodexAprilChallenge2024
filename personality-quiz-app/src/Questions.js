@@ -9,51 +9,62 @@ export default function Questions(props) {
 
   return (
     <div className="first h-screen flex flex-col p-4">
-    <h1 className="text-[28px] mb-4 text-white" style={{ textShadow: '2.5px 2.5px 0px #000, -2.5px -2.5px 0px #000, 2.5px -2.5px 0px #000, -2.5px 2.5px 0px #000' }}>{props.question}</h1>
-    <div className="grid grid-cols-2 grid-flow-row gap-16 flex-grow p-4">
-      {/* When user click on a button, the function handleClick() is called */}
-      <div><button
-        className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
-        onClick={() => {
-          handleClick();
-          props.handleAnswer();
+      <h1
+        className="text-[28px] mb-4 text-white"
+        style={{
+          textShadow:
+            "2.5px 2.5px 0px #000, -2.5px -2.5px 0px #000, 2.5px -2.5px 0px #000, -2.5px 2.5px 0px #000",
         }}
       >
-        {props.answers[0].content}
-      </button>
+        {props.question}
+      </h1>
+      <div className="grid grid-cols-2 grid-flow-row gap-16 flex-grow p-4">
+        {/* When user click on a button, the function handleClick() is called */}
+        <div>
+          <button
+            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
+            onClick={() => {
+              handleClick();
+              props.handleAnswer();
+            }}
+          >
+            {props.answers[0].content}
+          </button>
+        </div>
+        <div>
+          <button
+            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
+            onClick={() => {
+              handleClick();
+              props.handleAnswer();
+            }}
+          >
+            {props.answers[1].content}
+          </button>
+        </div>
+        <div>
+          <button
+            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
+            onClick={() => {
+              handleClick();
+              props.handleAnswer();
+            }}
+          >
+            {props.answers[1].content}
+          </button>
+        </div>
+        <div>
+          <button
+            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
+            onClick={() => {
+              handleClick();
+              props.handleAnswer();
+            }}
+          >
+            {props.answers[1].content}
+          </button>
+        </div>
       </div>
-      <div>
-      <button
- className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
-        onClick={() => {
-          handleClick();
-          props.handleAnswer();
-        }}
-      >
-        {props.answers[1].content}
-      </button></div>
-      <div>
-      <button
- className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
-        onClick={() => {
-          handleClick();
-          props.handleAnswer();
-        }}
-      >
-        {props.answers[1].content}
-      </button></div>
-      <div>
-      <button
- className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-full w-full"
-        onClick={() => {
-          handleClick();
-          props.handleAnswer();
-        }}
-      >
-        {props.answers[1].content}
-      </button>
-      </div>
-    </div>
     </div>
   );
 }
