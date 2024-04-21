@@ -1,14 +1,14 @@
 const QuizBank = [
     {
-        question: "blah1?",
+        question: "Do you consider yourself as a morning or night person?",
         answers: [
             {
                 type: "I",
-                content: "INTROVERTED??"
+                content: "Hello this is a lot of letter and more letters"
             },
             {
                 type: "E",
-                content: "blah2"
+                content: "I am definitely a night person omg!!"
             },
         ],
         scrollTo: ".second"

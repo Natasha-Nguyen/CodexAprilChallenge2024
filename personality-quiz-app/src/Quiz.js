@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import Questions from "./Questions";
 import QuizBank from "./QuizBank";
 import Results from "./Results";
-import "./App.css"
 
 // calculating the results, starting the quiz, and scrolling to the next section
 export default function Quiz() {
