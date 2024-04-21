@@ -17,7 +17,6 @@ function App() {
       <div className="section">
         <Quiz />
       </div>
-      <div className="transition"></div>
     </div>
   );
 }
