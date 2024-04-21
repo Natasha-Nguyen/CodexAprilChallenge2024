@@ -1,8 +1,7 @@
 import "./App.css";
-import Questions from "./Questions.js";
+import Quiz from "./Quiz.js";
 import Welcome from "./Welcome.js";
 import Results from "./Results.js";
-
 
 function App() {
   // This function is called when the user clicks on the "Start" button
@@ -12,24 +11,13 @@ function App() {
     document.querySelector(".first").scrollIntoView({ behavior: "smooth" });
   };
 
-
   return (
     <div className="App">
       <Welcome />
       <div className="section">
-      <div className="first">
-        <Questions name="blah blah?" scrollTo=".second" />
+        <Quiz />
       </div>
-      <div className="second">
-        <Questions name="blah blah 2?" scrollTo=".third"/>
-      </div>
-      <div className="third">
-        <Questions name="blah blah 3?" scrollTo=".results"/>
-      </div>
-      </div>
-      <div className="transition">
-
-      </div>
+      <div className="transition"></div>
       <div className="results">
         <Results />
       </div>
