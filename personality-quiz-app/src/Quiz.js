@@ -7,7 +7,17 @@ import Results from "./Results";
 export default function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
-  const [results, setResults] = useState({ I: 0, E: 0, A: 0, B: 0 });
+  const [results, setResults] = useState({
+    I: 0,
+    E: 0,
+    N: 0,
+    S: 0,
+    T: 0,
+    F: 0,
+    J: 0,
+    P: 0,
+  });
+  const [result, setResult] = useState("");
   const resultsRef = useRef(null);
 
   // increment the currentQuestionIndex
@@ -19,34 +29,118 @@ export default function Quiz() {
     }
   };
 
-  //  calculating the results
-  const handleAnswer = () => {
+  //  calculating the results, add +1
+  // I or E
+  // N or S
+  // T or F
+  // J or P
+  const handleAnswer = (props) => {
+    const answer = props;
+    if (answer === "I") {
+      setResults({ ...results, I: results.I + 1 });
+    } else if (answer === "E") {
+      setResults({ ...results, E: results.E + 1 });
+    } else if (answer === "N") {
+      setResults({ ...results, N: results.N + 1 });
+    } else if (answer === "S") {
+      setResults({ ...results, S: results.S + 1 });
+    } else if (answer === "T") {
+      setResults({ ...results, T: results.T + 1 });
+    } else if (answer === "F") {
+      setResults({ ...results, F: results.F + 1 });
+    } else if (answer === "J") {
+      setResults({ ...results, J: results.J + 1 });
+    } else if (answer === "P") {
+      setResults({ ...results, P: results.P + 1 });
+    }
     handleNextQuestion();
-  }
+  };
+
+  const results_bank = [
+    {
+      INFP: "you are infp!",
+      INFJ: "you are infj!",
+      INTJ: "you are intj!",
+      INTP: "you are intp!",
+      ISFJ: "you are isfj!",
+      ISFP: "you are isfp!",
+      ISTJ: "you are istj!",
+      ISTP: "you are istp!",
+      ENFJ: "you are enfj!",
+      ENFP: "you are enfp!",
+      ENTJ: "you are entj!",
+      ENTP: "you are entp!",
+      ESFJ: "you are esfj!",
+      ESFP: "you are esfp!",
+      ESTJ: "you are estj!",
+      ESTP: "you are estp!",
+    },
+  ];
 
   // scroll to Results section
   useEffect(() => {
     if (resultsRef.current) {
-      resultsRef.current.scrollIntoView({ behavior: 'smooth' });
+      resultsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [quizFinished]);
 
+  // display the results
+  useEffect(() => {
+    if (quizFinished) {
+      let resultString = Object.entries(results)
+        .filter(([key, value]) => value >= 1)
+        .map(([key, value]) => `${key}`)
+        .join("");
+      console.log("result string: ", resultString);
+
+      const match = results_bank.map((result) => result[resultString]).join("");
+      console.log(match);
+      setResult(match);
+    }
+  }, [quizFinished, results, results_bank]);
+
   return (
     <div>
-      <div className="first">
-      <Questions {...QuizBank[currentQuestionIndex]} handleAnswer={handleAnswer} />
+      <div className="section">
+        <div className="first">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
+        <div className="second">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
+        <div className="third">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
+        <div className="fourth">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
+        <div className="fifth">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
       </div>
-      <div className="second">
-      <Questions {...QuizBank[currentQuestionIndex]} handleAnswer={handleAnswer}/>
-      </div>
-      <div className="third">
-      <Questions {...QuizBank[currentQuestionIndex]} handleAnswer={handleAnswer}/>
-      </div>
-    {quizFinished && (
-        <div className="results" ref={resultsRef}>
-        <Results />
-      </div>
-    )}
+      <div className="transition"></div>
+      {quizFinished && (
+        <>
+          <div className="results" ref={resultsRef}>
+            <Results name={result} />
+          </div>
+        </>
+      )}
     </div>
   );
 }

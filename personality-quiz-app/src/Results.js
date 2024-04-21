@@ -1,4 +1,4 @@
-export default function Results() {
+export default function Results(props) {
   const RestartQuiz = () => {
     console.log("Quiz Restarted");
     window.location.reload();
@@ -41,18 +41,17 @@ export default function Results() {
     // </div>
     <div className="results">
       <div className="results flex flex-col items-center justify-center h-auto">
-        
         <img
           src="./fishing-character.png"
           className="w-auto h-1/2 sm:w-auto object-contain"
           alt="Fishing Character"
         />
         <h1 className="text-2xl text-sky-600 mb-5">
-            You Caught...
+          You Caught... {props.name}
         </h1>
         <p className="text-sm sm:text-base md:text-xl text-sky-600 mb-5">
-            You love the great outdoors and spending time by the water. You are
-            patient and enjoy the thrill of the catch. Keep on fishing!
+          You love the great outdoors and spending time by the water. You are
+          patient and enjoy the thrill of the catch. Keep on fishing!
         </p>
         <p className="text-xs xs:text-base md:text-sm text-slate-100 mb-5">
           Made by{" "}
