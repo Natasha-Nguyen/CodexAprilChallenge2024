@@ -18,9 +18,6 @@ function App() {
         <Quiz />
       </div>
       <div className="transition"></div>
-      <div className="results">
-        <Results />
-      </div>
     </div>
   );
 }
