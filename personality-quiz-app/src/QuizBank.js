@@ -40,7 +40,7 @@ const QuizBank = [
                 content: "blah2"
             }
         ],
-        scrollTo: ".results"
+        scrollTo: ".transition"
     }
 
 ]
