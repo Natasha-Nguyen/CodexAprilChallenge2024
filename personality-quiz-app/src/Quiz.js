@@ -72,22 +72,15 @@ export default function Quiz() {
 
   const results_bank = useMemo(() => [
     {
-      INFP: "you are infp!",
-      INFJ: "you are infj!",
-      INTJ: "you are intj!",
-      INTP: "you are intp!",
-      ISFJ: "you are isfj!",
-      ISFP: "you are isfp!",
-      ISTJ: "you are istj!",
-      ISTP: "you are istp!",
-      ENFJ: "you are enfj!",
-      ENFP: "you are enfp!",
-      ENTJ: "you are entj!",
-      ENTP: "you are entp!",
-      ESFJ: "you are esfj!",
-      ESFP: "you are esfp!",
-      ESTJ: "you are estj!",
-      ESTP: "you are estp!",
+      DINFJU: "Whale Shark",
+      DISTJA: "Emperor Angelfish",
+      GISTPU: "Pacific Octopuses",
+      GISFPA: "Moray Eel",
+      DENFJA: "Clownfish",
+      DESFJA: "Bluefin Tuna",
+      GESTPU: "Zebra Sharks",
+      GENFPU: "Manta Ray",
+      ALL: "Siamese fighting fish"
     },
   ], []);
 
@@ -109,7 +102,10 @@ export default function Quiz() {
 
       const match = results_bank.map((result) => result[resultString]).join("");
       console.log(match);
-      setResult(match);
+      if (match === undefined || match === "") {
+        setResult(results_bank[0].ALL);
+      } else
+        setResult(match);
     }
   }, [quizFinished, results, results_bank]);
 
