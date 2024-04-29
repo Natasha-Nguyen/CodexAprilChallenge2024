@@ -7,7 +7,7 @@ const QuizBank = [
                 content: "Definitely a morning person!"
             },
             {
-                type: "N",
+                type: "G",
                 content: "I’m a night owl!"
             },
         ],
@@ -77,7 +77,7 @@ const QuizBank = [
                 content: "Maintain a steady course"
             },
             {
-                type: "T",
+                type: "U",
                 content: " Experience fluctuations in mood and adaptability"
             }
         ],

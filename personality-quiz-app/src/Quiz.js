@@ -19,7 +19,7 @@ export default function Quiz() {
     J: 0,
     P: 0,
     A: 0,
-    U: 0
+    U: 0,
   });
   const [result, setResult] = useState("");
   const resultsRef = useRef(null);
@@ -44,7 +44,7 @@ export default function Quiz() {
     const answer = props;
     if (answer === "D") {
       setResults({ ...results, D: results.D + 1 });
-    } else if (answer === "G") { 
+    } else if (answer === "G") {
       setResults({ ...results, G: results.G + 1 });
     } else if (answer === "I") {
       setResults({ ...results, I: results.I + 1 });
@@ -64,25 +64,73 @@ export default function Quiz() {
       setResults({ ...results, P: results.P + 1 });
     } else if (answer === "A") {
       setResults({ ...results, A: results.A + 1 });
-    } else if (answer === "U") { 
+    } else if (answer === "U") {
       setResults({ ...results, U: results.U + 1 });
     }
     handleNextQuestion();
   };
 
-  const results_bank = useMemo(() => [
-    {
-      DINFJU: "Whale Shark",
-      DISTJA: "Emperor Angelfish",
-      GISTPU: "Pacific Octopuses",
-      GISFPA: "Moray Eel",
-      DENFJA: "Clownfish",
-      DESFJA: "Bluefin Tuna",
-      GESTPU: "Zebra Sharks",
-      GENFPU: "Manta Ray",
-      ALL: "Siamese fighting fish"
-    },
-  ], []);
+  const results_bank = useMemo(
+    () => [
+      {
+        DINFJU: {
+          name: "Whale Shark",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        DISTJA: {
+          name: "Emperor Angel Fish",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        GISTPU: {
+          name: "Pacific Octopuses",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        GISFPA: {
+          name: "Moray Eel",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        DENFJA: {
+          name: "Clownfish",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        DESFJA: {
+          name: "Bluefin Tuna",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        GESTPU: {
+          name: "Zebra Sharks",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        GENFPU: {
+          name: "Manta Ray",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+        ALL: {
+          name: "Siamese fighting fish",
+          image: "",
+          content:
+            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+        },
+      },
+    ],
+    []
+  );
 
   // scroll to Results section
   useEffect(() => {
@@ -100,12 +148,12 @@ export default function Quiz() {
         .join("");
       console.log("result string: ", resultString);
 
-      const match = results_bank.map((result) => result[resultString]).join("");
-      console.log(match);
-      if (match === undefined || match === "") {
+      const match = results_bank.find((result) => result[resultString]);
+      const value = match ? match[resultString] : undefined;
+
+      if (value === undefined || value === "") {
         setResult(results_bank[0].ALL);
-      } else
-        setResult(match);
+      } else setResult(value);
     }
   }, [quizFinished, results, results_bank]);
 
@@ -153,7 +201,7 @@ export default function Quiz() {
       {quizFinished && (
         <>
           <div className="results" ref={resultsRef}>
-            <Results name={result} />
+            <Results result={result} />
           </div>
         </>
       )}
