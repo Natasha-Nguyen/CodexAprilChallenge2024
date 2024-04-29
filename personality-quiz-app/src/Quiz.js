@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import Questions from "./Questions";
 import QuizBank from "./QuizBank";
 import Results from "./Results";
@@ -8,6 +8,8 @@ export default function Quiz() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [quizFinished, setQuizFinished] = useState(false);
   const [results, setResults] = useState({
+    D: 0,
+    G: 0,
     I: 0,
     E: 0,
     N: 0,
@@ -16,6 +18,8 @@ export default function Quiz() {
     F: 0,
     J: 0,
     P: 0,
+    A: 0,
+    U: 0
   });
   const [result, setResult] = useState("");
   const resultsRef = useRef(null);
@@ -30,13 +34,19 @@ export default function Quiz() {
   };
 
   //  calculating the results, add +1
+  // D or G Day or Night
   // I or E
   // N or S
   // T or F
   // J or P
+  // A or U Assertive or Turbulent
   const handleAnswer = (props) => {
     const answer = props;
-    if (answer === "I") {
+    if (answer === "D") {
+      setResults({ ...results, D: results.D + 1 });
+    } else if (answer === "G") { 
+      setResults({ ...results, G: results.G + 1 });
+    } else if (answer === "I") {
       setResults({ ...results, I: results.I + 1 });
     } else if (answer === "E") {
       setResults({ ...results, E: results.E + 1 });
@@ -52,11 +62,15 @@ export default function Quiz() {
       setResults({ ...results, J: results.J + 1 });
     } else if (answer === "P") {
       setResults({ ...results, P: results.P + 1 });
+    } else if (answer === "A") {
+      setResults({ ...results, A: results.A + 1 });
+    } else if (answer === "U") { 
+      setResults({ ...results, U: results.U + 1 });
     }
     handleNextQuestion();
   };
 
-  const results_bank = [
+  const results_bank = useMemo(() => [
     {
       INFP: "you are infp!",
       INFJ: "you are infj!",
@@ -75,7 +89,7 @@ export default function Quiz() {
       ESTJ: "you are estj!",
       ESTP: "you are estp!",
     },
-  ];
+  ], []);
 
   // scroll to Results section
   useEffect(() => {
@@ -127,6 +141,12 @@ export default function Quiz() {
           />
         </div>
         <div className="fifth">
+          <Questions
+            {...QuizBank[currentQuestionIndex]}
+            handleAnswer={handleAnswer}
+          />
+        </div>
+        <div className="sixth">
           <Questions
             {...QuizBank[currentQuestionIndex]}
             handleAnswer={handleAnswer}

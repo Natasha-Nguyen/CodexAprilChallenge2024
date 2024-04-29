@@ -42,28 +42,6 @@ export default function Questions(props) {
             {props.answers[1].content}
           </button>
         </div>
-        <div>
-          <button
-            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-[50%] w-[50%]"
-            onClick={() => {
-              handleClick();
-              props.handleAnswer(props.answers[2].type);
-            }}
-          >
-            {props.answers[1].content}
-          </button>
-        </div>
-        <div>
-          <button
-            className="bg-sky-400 hover:bg-sky-600 border-4 border-white p-2 text-white mb-4 text-[16px] h-[50%] w-[50%]"
-            onClick={() => {
-              handleClick();
-              props.handleAnswer(props.answers[3].type);
-            }}
-          >
-            {props.answers[1].content}
-          </button>
-        </div>
       </div>
     </div>
   );

@@ -1,114 +1,87 @@
 const QuizBank = [
     {
-        question: "Question 1: Do you consider yourself as a morning or night person?",
+        question: "Question 1: Are you a morning or night person?",
         answers: [
             {
-                type: "I",
-                content: "Hello this is a lot of letter and more letters"
+                type: "D",
+                content: "Definitely a morning person!"
             },
             {
-                type: "E",
-                content: "I am definitely a night person omg!!"
-            },
-            {
-                type: "E",
-                content: "I am definitely a night person omg!!"
-            },
-            {
-                type: "I",
-                content: "I am definitely a night person omg!!"
+                type: "N",
+                content: "I’m a night owl!"
             },
         ],
         scrollTo: ".second"
     },
     {
-        question: "Question 2: What do you do in the weekends?",
+        question: "Question 2: How do you recharge after a busy day?",
         answers: [
             {
                 type: "I",
-                content: "blah1"
+                content: "By relaxing in a quiet, hidden cove"
             },
             {
                 type: "E",
-                content: "blah2"
-            },
-            {
-                type: "I",
-                content: "blah2"
-            },
-            {
-                type: "E",
-                content: "blah2"
+                content: "By exploring coral reefs with colorful fish"
             }
         ],
         scrollTo: ".third"
     },
     {
-        question: "Question 3: How do you approach new information or ideas?",
+        question: "Question 3: When charting your course underwater, do you lean towards:",
         answers: [
             {
-                type: "N",
-                content: "blah1"
-            },
-            {
                 type: "S",
-                content: "blah2"
+                content: "Calculating your path based on practical factors and logical reasoning"
             },
             {
                 type: "N",
-                content: "blah2"
-            },
-            {
-                type: "S",
-                content: "blah2"
+                content: "Trusting your instincts and intuitive senses"
             }
         ],
         scrollTo: ".fourth"
     },
     {
-        question: "Question 4: When making decisions, do you rely more on:",
+        question: "Question 4: When sharing insights underwater, do you:",
         answers: [
             {
                 type: "T",
-                content: "blah1"
+                content: "Offer feedback grounded in factual observations"
             },
             {
                 type: "F",
-                content: "blah2"
-            },
-            {
-                type: "F",
-                content: "blah2"
-            },
-            {
-                type: "T",
-                content: "blah2"
+                content: "Ensure your feedback is delivered with empathy and consideration"
             }
         ],
         scrollTo: ".fifth"
     },
     {
-        question: "Question 5: blah3?",
+        question: "Question 5: When embarking on an underwater exploration, do you usually:",
         answers: [
             {
                 type: "J",
-                content: "blah1"
+                content: "Create a detailed dive plan and stick to it step by step, carefully noting depths and currents"
             },
             {
                 type: "P",
-                content: "blah2"
+                content: "Explore various paths and adapt your route based on intriguing discoveries along the way"
+            }
+        ],
+        scrollTo: ".sixth"
+    },
+    {
+        question: "Question 6: As you glide through ocean currents, do you:",
+        answers: [
+            {
+                type: "A",
+                content: "Maintain a steady course"
             },
             {
-                type: "P",
-                content: "blah2"
-            },
-            {
-                type: "J",
-                content: "blah2"
+                type: "T",
+                content: " Experience fluctuations in mood and adaptability"
             }
         ],
         scrollTo: ".transition"
     }
-
 ]
 export default QuizBank;
