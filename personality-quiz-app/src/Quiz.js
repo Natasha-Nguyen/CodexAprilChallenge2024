@@ -107,7 +107,7 @@ export default function Quiz() {
           name: "a Bluefin Tuna",
           image: "./bluefin_tuna.png",
           content:
-            "You are a daytime bluefin tuna, embracing the vast ocean with your sociable and exploratory nature. Your extroverted personality thrivaes in social interactions and new experiences, while your keen senses guide you through the dynamic marine environment. With a thoughtful blend of empathy and practicality, you navigate challenges with confidence and adaptability, contributing to the harmony of the ocean's ecosystem Keep on fishing!",
+            "You are a daytime bluefin tuna, embracing the vast ocean with your sociable and exploratory nature. Your extroverted personality thrives in social interactions and new experiences, while your keen senses guide you through the dynamic marine environment. With a thoughtful blend of empathy and practicality, you navigate challenges with confidence and adaptability, contributing to the harmony of the ocean's ecosystem. Keep on fishing!",
         },
         GESTPU: {
           name: "a Zebra Shark",
