@@ -80,10 +80,10 @@ export default function Quiz() {
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         DISTJA: {
-          name: "an Emperor Angel Fish",
+          name: "an Emperor Angelfish",
           image: "emperorangelfish.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "Emperor Angelfish are beautiful and graceful creatures of the sea. You possess a unique and captivating presence that sets you apart from others. Emperor Angelfish rarely mingle with other fish, preferring to stay alone. Similarly, you often find solace and fulfillment in your own company, preferring solitude over crowded social gatherings. Keep on fishing!",
         },
         GISTPU: {
           name: "a Pacific Octopus",
