@@ -74,7 +74,7 @@ export default function Quiz() {
     () => [
       {
         DINFJU: {
-          name: "Whale Shark",
+          name: "a Whale Shark",
           image: "./whaleshark.png",
           content:
             "Like this gentle giant of the sea, you possess a nurturing and compassionate nature. You are known for your peaceful and harmonious presence, radiating a sense of calm and serenity wherever you go. Much like the Whale Shark's gentle demeanor, you have a natural ability to bring comfort and support to those around you. Keep on fishing!",
@@ -95,37 +95,37 @@ export default function Quiz() {
           name: "a Moray Eel",
           image: "morayeel.png",
           content:
-            " Like this mysterious creature, you possess a complex and misunderstood nature. You are fiercely independent and prefer to carve your own path, much like the Moray Eel's solitary nature. Despite your solitary tendencies, you form deep and meaningful connections with those you trust, fiercely loyal to your inner circle. Keep on fishing!",
+            "Like this mysterious creature, you possess a complex and misunderstood nature. You are fiercely independent and prefer to carve your own path, much like the Moray Eel's solitary nature. Despite your solitary tendencies, you form deep and meaningful connections with those you trust, fiercely loyal to your inner circle. Keep on fishing!",
         },
         DENFJA: {
           name: "a Clownfish",
           image: "./clownfish.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "You are a vibrant clownfish, bringing color and energy to the coral reefs with your extroverted and sociable nature. Your curiosity and intuition guide you through the intricate underwater world, always eager to explore new territories and make connections with fellow marine life. With a caring and empathetic heart, you foster harmony and cooperation, making you a beloved member of the reef community. Keep on fishing!",
         },
         DESFJA: {
           name: "a Bluefin Tuna",
           image: "./bluefin_tuna.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "You are a daytime bluefin tuna, embracing the vast ocean with your sociable and exploratory nature. Your extroverted personality thrivaes in social interactions and new experiences, while your keen senses guide you through the dynamic marine environment. With a thoughtful blend of empathy and practicality, you navigate challenges with confidence and adaptability, contributing to the harmony of the ocean's ecosystem Keep on fishing!",
         },
         GESTPU: {
           name: "a Zebra Shark",
           image: "./zebra_shark.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "You are a nocturnal zebra shark, thriving in the darkness of the ocean with your adventurous and curious nature. Your keen senses guide you through the underwater world, always open to new experiences and interactions. With a logical and analytical mind, you approach challenges with precision and strategic thinking, adapting to changes with flexibility and spontaneity. Keep on fishing!",
         },
         GENFPU: {
           name: "a Manta Ray",
           image: "./mantaray.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "You are a curious and adaptable manta ray, navigating the ocean depths with a gentle and peaceful demeanor. Your intelligence and independence shine through as you explore new wonders and form connections with other sea creatures, all while embracing the harmony of your underwater world. Keep on fishing!",
         },
         ALL: {
           name: "a Siamese fighting fish",
           image: "./fightingfish.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "You are a Siamese fighting fish, an all-rounder, known for your vibrant colors and fierce independence. With a confident and assertive demeanor, you navigate your territory with pride, always ready to defend your space. Your keen senses and strategic mind make you a skilled hunter, while your solitary nature reflects your preference for independence and self-reliance in the underwater world. Keep on fishing!",
         },
       },
     ],
