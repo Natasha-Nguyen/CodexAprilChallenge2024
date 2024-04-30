@@ -75,25 +75,25 @@ export default function Quiz() {
       {
         DINFJU: {
           name: "Whale Shark",
-          image: "",
+          image: "./whaleshark.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         DISTJA: {
-          name: "Emperor Angel Fish",
-          image: "",
+          name: "an Emperor Angel Fish",
+          image: "emperorangelfish.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         GISTPU: {
-          name: "Pacific Octopuses",
-          image: "",
+          name: "a Pacific Octopus",
+          image: "octopus.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         GISFPA: {
-          name: "Moray Eel",
-          image: "",
+          name: "a Moray Eel",
+          image: "morayeel.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
@@ -122,8 +122,8 @@ export default function Quiz() {
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         ALL: {
-          name: "Siamese fighting fish",
-          image: "",
+          name: "a Siamese fighting fish",
+          image: "./fightingfish.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
