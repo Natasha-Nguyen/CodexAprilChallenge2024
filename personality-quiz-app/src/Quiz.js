@@ -89,7 +89,7 @@ export default function Quiz() {
           name: "a Pacific Octopus",
           image: "octopus.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "Like this intelligent creature, you possess remarkable adaptability and ingenuity. You excel in navigating various situations with ease, utilizing your resourcefulness to overcome challenges. Much like the octopus, you thrive in environments where you can express your creativity and problem-solving skills. Keep on fishing!",
         },
         GISFPA: {
           name: "a Moray Eel",
