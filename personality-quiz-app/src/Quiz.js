@@ -98,26 +98,26 @@ export default function Quiz() {
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         DENFJA: {
-          name: "Clownfish",
-          image: "",
+          name: "a Clownfish",
+          image: "./clownfish.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         DESFJA: {
-          name: "Bluefin Tuna",
-          image: "",
+          name: "a Bluefin Tuna",
+          image: "./bluefin_tuna.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         GESTPU: {
-          name: "Zebra Sharks",
-          image: "",
+          name: "a Zebra Shark",
+          image: "./zebra_shark.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },
         GENFPU: {
-          name: "Manta Ray",
-          image: "",
+          name: "a Manta Ray",
+          image: "./mantaray.png",
           content:
             "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
         },

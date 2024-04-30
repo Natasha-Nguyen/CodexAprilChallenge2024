@@ -42,7 +42,7 @@ export default function Results(props) {
     <div className="results">
       <div className="results flex flex-col items-center justify-center h-auto">
         <img
-          src="./fishing-character.png"
+          src={props.result.image}
           className="w-auto h-1/2 sm:w-auto object-contain"
           alt="Fishing Character"
         />
