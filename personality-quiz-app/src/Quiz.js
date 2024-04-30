@@ -77,7 +77,7 @@ export default function Quiz() {
           name: "Whale Shark",
           image: "./whaleshark.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            "Like this gentle giant of the sea, you possess a nurturing and compassionate nature. You are known for your peaceful and harmonious presence, radiating a sense of calm and serenity wherever you go. Much like the Whale Shark's gentle demeanor, you have a natural ability to bring comfort and support to those around you. Keep on fishing!",
         },
         DISTJA: {
           name: "an Emperor Angelfish",
@@ -95,7 +95,7 @@ export default function Quiz() {
           name: "a Moray Eel",
           image: "morayeel.png",
           content:
-            "You love the great outdoors and spending time by the water. You are patient and enjoy the thrill of the catch. Keep on fishing!",
+            " Like this mysterious creature, you possess a complex and misunderstood nature. You are fiercely independent and prefer to carve your own path, much like the Moray Eel's solitary nature. Despite your solitary tendencies, you form deep and meaningful connections with those you trust, fiercely loyal to your inner circle. Keep on fishing!",
         },
         DENFJA: {
           name: "a Clownfish",
