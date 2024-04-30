@@ -1,8 +1,26 @@
+import { FaShare } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+
 export default function Results(props) {
   const RestartQuiz = () => {
     console.log("Quiz Restarted");
     window.location.reload();
     window.scrollTo(0, 0);
+  };
+
+  const shareUrl = () => {
+    navigator.clipboard.writeText(window.location.href);
+    alert("URL copied to clipboard");
+  };
+
+  const shareToTwitter = () => {
+    const text = "Check out this personality quiz!";
+    const url = window.location.href;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      text
+    )}&url=${encodeURIComponent(url)}`;
+
+    window.open(twitterUrl, "_blank");
   };
 
   return (
@@ -75,12 +93,32 @@ export default function Results(props) {
             Codédex April Monthly Challenge
           </a>
         </p>
-        <button
-          className="bg-sky-400 hover:bg-sky-600 border-4 border-white text-slate-100 w-full sm:w-auto p-2 sm:p-4"
-          onClick={RestartQuiz}
-        >
-          Fish Again
-        </button>
+        <div className="flex space-x-4">
+          <button
+            className="bg-sky-400 hover:bg-sky-600 border-4 border-white text-slate-100 w-full sm:w-auto p-2 sm:p-4"
+            onClick={RestartQuiz}
+          >
+            Fish Again
+          </button>
+          <button
+            className="flex items-center bg-sky-400 hover:bg-sky-600 border-4 border-white text-slate-100 w-full sm:w-auto p-2 sm:p-4"
+            onClick={shareUrl}
+          >
+            <div className="flex items-center space-x-2">
+              <FaShare />
+              <span>Share URL</span>
+            </div>
+          </button>
+          <button
+            className="flex items-center bg-sky-400 hover:bg-sky-600 border-4 border-white text-slate-100 w-full sm:w-auto p-2 sm:p-4"
+            onClick={shareToTwitter}
+          >
+            <div className="flex items-center space-x-2">
+              <span>Share on</span>
+              <FaTwitter />
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   );
