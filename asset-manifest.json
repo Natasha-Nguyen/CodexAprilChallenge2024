@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CodexAprilChallenge2024/static/css/main.91af1a06.css",
+    "main.js": "/CodexAprilChallenge2024/static/js/main.8d5294dd.js",
+    "static/js/453.47d949b8.chunk.js": "/CodexAprilChallenge2024/static/js/453.47d949b8.chunk.js",
+    "static/media/welcome-bg.png": "/CodexAprilChallenge2024/static/media/welcome-bg.25ba5d0068689d3a6298.png",
+    "index.html": "/CodexAprilChallenge2024/index.html",
+    "main.91af1a06.css.map": "/CodexAprilChallenge2024/static/css/main.91af1a06.css.map",
+    "main.8d5294dd.js.map": "/CodexAprilChallenge2024/static/js/main.8d5294dd.js.map",
+    "453.47d949b8.chunk.js.map": "/CodexAprilChallenge2024/static/js/453.47d949b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91af1a06.css",
+    "static/js/main.8d5294dd.js"
+  ]
+}
