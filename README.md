@@ -1,4 +1,4 @@
-# Fish Personality Quiz
+# 🐟 Fish Personality Quiz
 - Made for Codédex April Challenge 2024
 - Made by [@nhicodes](https://github.com/Natasha-Nguyen) and [@kwicodes](https://github.com/kriztin12)
 
